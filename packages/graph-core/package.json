@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/graph-core",
+  "version": "0.0.0",
+  "description": "Language-agnostic code-graph schema: nodes (module/class/fn/block), edges (import/call/inherit/flow). Zod-validated, independently versioned.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

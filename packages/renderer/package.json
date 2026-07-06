@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/renderer",
+  "version": "0.0.0",
+  "description": "WebGL map engine: semantic zoom L4-L1, edge bundling, off-thread layout (ELK + custom), 60fps on 50k-node graphs.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

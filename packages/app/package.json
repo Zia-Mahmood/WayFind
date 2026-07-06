@@ -1,0 +1,8 @@
+{
+  "name": "@wayfind/app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tauri desktop shell + shared React UI: map view, timeline, search, breadcrumbs, inspector.",
+  "license": "Apache-2.0",
+  "type": "module"
+}

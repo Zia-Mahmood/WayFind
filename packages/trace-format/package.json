@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/trace-format",
+  "version": "0.0.0",
+  "description": ".wayfind-trace spec and reader/writer: event stream (enter/exit/branch/assign/throw), value snapshots, source spans. Columnar + compressed.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

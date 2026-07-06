@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/indexer-ts",
+  "version": "0.0.0",
+  "description": "TypeScript/JavaScript static analysis to graph-core (tree-sitter + TS compiler API), with incremental re-indexing.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

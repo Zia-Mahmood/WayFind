@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & design discussions
+    url: https://github.com/OWNER/wayfind/discussions
+    about: Use Discussions for questions, ideas, and design debate — issues are for actionable bugs and features.
+  - name: Security issue
+    url: https://github.com/OWNER/wayfind/security/advisories/new
+    about: Report vulnerabilities privately — never in a public issue.

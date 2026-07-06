@@ -1,0 +1,7 @@
+{
+  "name": "@wayfind/vscode-ext",
+  "version": "0.0.0",
+  "private": true,
+  "description": "VS Code integration: bidirectional focus sync, go-to-code, 'record this test' lens.",
+  "license": "Apache-2.0"
+}

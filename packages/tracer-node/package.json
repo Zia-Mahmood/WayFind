@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/tracer-node",
+  "version": "0.0.0",
+  "description": "Node.js runtime tracer via the V8 inspector protocol: user-code filtering, value sampling/size caps, redaction.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

@@ -1,0 +1,35 @@
+name: Language adapter request
+description: Request or volunteer to build support for a new language
+labels: [language-adapter]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: Go, Rust, C#, Ruby...
+    validations:
+      required: true
+  - type: textarea
+    id: static
+    attributes:
+      label: Static analysis tooling
+      description: What exists for parsing/semantic resolution? (tree-sitter grammar? LSP server? compiler API?)
+    validations:
+      required: true
+  - type: textarea
+    id: runtime
+    attributes:
+      label: Runtime tracing mechanism
+      description: How could a run be traced with acceptable overhead? (debug protocol, instrumentation API, eBPF, ...)
+    validations:
+      required: true
+  - type: dropdown
+    id: involvement
+    attributes:
+      label: Your involvement
+      options:
+        - I want to build it (see docs/writing-a-language-adapter.md)
+        - I can help test on real repos
+        - Just requesting
+    validations:
+      required: true

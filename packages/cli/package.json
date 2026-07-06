@@ -1,0 +1,11 @@
+{
+  "name": "wayfind",
+  "version": "0.0.0",
+  "description": "A zoomable map of your codebase with a flight recorder. wayfind index / record / open / check.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "wayfind": "./dist/main.js"
+  },
+  "files": ["dist"]
+}

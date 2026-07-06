@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+.turbo/
+*.tsbuildinfo
+
+# tauri
+packages/app/src-tauri/target/
+
+# wayfind's own artifacts (indexes/traces of THIS repo during dev;
+# committed golden bundles live under examples/ and are NOT ignored)
+/.wayfind/
+*.wayfind-trace
+!examples/**/*.wayfind-trace
+
+# editors & OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# logs & env
+*.log
+.env
+.env.*

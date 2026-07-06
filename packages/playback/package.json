@@ -1,0 +1,10 @@
+{
+  "name": "@wayfind/playback",
+  "version": "0.0.0",
+  "description": "Trace loader, timeline model, and state reconstruction at time t; exception propagation paths.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"]
+}

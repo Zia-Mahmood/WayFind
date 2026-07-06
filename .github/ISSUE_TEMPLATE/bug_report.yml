@@ -1,0 +1,35 @@
+name: Bug report
+description: Something is broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >
+        Exact commands and, if possible, a link to a repo that reproduces it.
+        If playback/tracing is involved, attach a .wayfind-trace — but ONLY
+        after checking it for sensitive values (see SECURITY.md).
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Wayfind version
+      placeholder: wayfind --version
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, Node version, target repo language/size"
+    validations:
+      required: true

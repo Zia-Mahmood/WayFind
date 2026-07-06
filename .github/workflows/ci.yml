@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: pnpm install
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+# Planned jobs (wired in when their milestone lands — see docs/ROADMAP.md):
+#   golden:  snapshot-verify indexes + traces for every repo in examples/   (M1)
+#   perf:    renderer benchmarks with regression gates                      (M2)
+#   tauri:   cross-platform desktop builds (windows/macos/ubuntu matrix)    (M6)
