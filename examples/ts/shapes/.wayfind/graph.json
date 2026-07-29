@@ -1,0 +1,374 @@
+{
+  "formatVersion": "0.1.0",
+  "language": "typescript",
+  "nodes": [
+    {
+      "id": "src/circle.ts",
+      "kind": "module",
+      "name": "circle.ts",
+      "span": {
+        "file": "src/circle.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 17,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/circle.ts#Circle",
+      "kind": "class",
+      "name": "Circle",
+      "span": {
+        "file": "src/circle.ts",
+        "startLine": 4,
+        "startCol": 1,
+        "endLine": 16,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/circle.ts#Circle.area",
+      "kind": "method",
+      "name": "area",
+      "span": {
+        "file": "src/circle.ts",
+        "startLine": 9,
+        "startCol": 3,
+        "endLine": 11,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/circle.ts#Circle.constructor",
+      "kind": "method",
+      "name": "constructor",
+      "span": {
+        "file": "src/circle.ts",
+        "startLine": 5,
+        "startCol": 3,
+        "endLine": 7,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/circle.ts#Circle.draw",
+      "kind": "method",
+      "name": "draw",
+      "span": {
+        "file": "src/circle.ts",
+        "startLine": 13,
+        "startCol": 3,
+        "endLine": 15,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/main.ts",
+      "kind": "module",
+      "name": "main.ts",
+      "span": {
+        "file": "src/main.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 11,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/main.ts#render",
+      "kind": "function",
+      "name": "render",
+      "span": {
+        "file": "src/main.ts",
+        "startLine": 5,
+        "startCol": 1,
+        "endLine": 7,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/rect.ts",
+      "kind": "module",
+      "name": "rect.ts",
+      "span": {
+        "file": "src/rect.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 19,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/rect.ts#Rect",
+      "kind": "class",
+      "name": "Rect",
+      "span": {
+        "file": "src/rect.ts",
+        "startLine": 3,
+        "startCol": 1,
+        "endLine": 18,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/rect.ts#Rect.area",
+      "kind": "method",
+      "name": "area",
+      "span": {
+        "file": "src/rect.ts",
+        "startLine": 11,
+        "startCol": 3,
+        "endLine": 13,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/rect.ts#Rect.constructor",
+      "kind": "method",
+      "name": "constructor",
+      "span": {
+        "file": "src/rect.ts",
+        "startLine": 4,
+        "startCol": 3,
+        "endLine": 9,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/rect.ts#Rect.draw",
+      "kind": "method",
+      "name": "draw",
+      "span": {
+        "file": "src/rect.ts",
+        "startLine": 15,
+        "startCol": 3,
+        "endLine": 17,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/shape.ts",
+      "kind": "module",
+      "name": "shape.ts",
+      "span": {
+        "file": "src/shape.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 12,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/shape.ts#Drawable",
+      "kind": "interface",
+      "name": "Drawable",
+      "span": {
+        "file": "src/shape.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 3,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/shape.ts#Shape",
+      "kind": "class",
+      "name": "Shape",
+      "span": {
+        "file": "src/shape.ts",
+        "startLine": 5,
+        "startCol": 1,
+        "endLine": 11,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/shape.ts#Shape.describe",
+      "kind": "method",
+      "name": "describe",
+      "span": {
+        "file": "src/shape.ts",
+        "startLine": 8,
+        "startCol": 3,
+        "endLine": 10,
+        "endCol": 4
+      }
+    },
+    {
+      "id": "src/util.ts",
+      "kind": "module",
+      "name": "util.ts",
+      "span": {
+        "file": "src/util.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 4,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/util.ts#round2",
+      "kind": "function",
+      "name": "round2",
+      "span": {
+        "file": "src/util.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 3,
+        "endCol": 2
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/circle.ts",
+      "to": "src/circle.ts#Circle",
+      "kind": "contains"
+    },
+    {
+      "from": "src/circle.ts",
+      "to": "src/shape.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/circle.ts",
+      "to": "src/util.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/circle.ts#Circle",
+      "to": "src/circle.ts#Circle.area",
+      "kind": "contains"
+    },
+    {
+      "from": "src/circle.ts#Circle",
+      "to": "src/circle.ts#Circle.constructor",
+      "kind": "contains"
+    },
+    {
+      "from": "src/circle.ts#Circle",
+      "to": "src/circle.ts#Circle.draw",
+      "kind": "contains"
+    },
+    {
+      "from": "src/circle.ts#Circle",
+      "to": "src/shape.ts#Drawable",
+      "kind": "implement"
+    },
+    {
+      "from": "src/circle.ts#Circle",
+      "to": "src/shape.ts#Shape",
+      "kind": "inherit"
+    },
+    {
+      "from": "src/circle.ts#Circle.area",
+      "to": "src/util.ts#round2",
+      "kind": "call"
+    },
+    {
+      "from": "src/circle.ts#Circle.constructor",
+      "to": "src/shape.ts#Shape",
+      "kind": "call"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/circle.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/circle.ts#Circle",
+      "kind": "call"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/main.ts#render",
+      "kind": "call"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/main.ts#render",
+      "kind": "contains"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/rect.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/rect.ts#Rect",
+      "kind": "call"
+    },
+    {
+      "from": "src/main.ts",
+      "to": "src/shape.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/main.ts#render",
+      "to": "src/shape.ts#Shape.describe",
+      "kind": "call"
+    },
+    {
+      "from": "src/rect.ts",
+      "to": "src/rect.ts#Rect",
+      "kind": "contains"
+    },
+    {
+      "from": "src/rect.ts",
+      "to": "src/shape.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/rect.ts#Rect",
+      "to": "src/rect.ts#Rect.area",
+      "kind": "contains"
+    },
+    {
+      "from": "src/rect.ts#Rect",
+      "to": "src/rect.ts#Rect.constructor",
+      "kind": "contains"
+    },
+    {
+      "from": "src/rect.ts#Rect",
+      "to": "src/rect.ts#Rect.draw",
+      "kind": "contains"
+    },
+    {
+      "from": "src/rect.ts#Rect",
+      "to": "src/shape.ts#Drawable",
+      "kind": "implement"
+    },
+    {
+      "from": "src/rect.ts#Rect",
+      "to": "src/shape.ts#Shape",
+      "kind": "inherit"
+    },
+    {
+      "from": "src/rect.ts#Rect.constructor",
+      "to": "src/shape.ts#Shape",
+      "kind": "call"
+    },
+    {
+      "from": "src/shape.ts",
+      "to": "src/shape.ts#Drawable",
+      "kind": "contains"
+    },
+    {
+      "from": "src/shape.ts",
+      "to": "src/shape.ts#Shape",
+      "kind": "contains"
+    },
+    {
+      "from": "src/shape.ts#Shape",
+      "to": "src/shape.ts#Shape.describe",
+      "kind": "contains"
+    },
+    {
+      "from": "src/util.ts",
+      "to": "src/util.ts#round2",
+      "kind": "contains"
+    }
+  ]
+}

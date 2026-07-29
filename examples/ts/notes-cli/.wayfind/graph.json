@@ -1,0 +1,192 @@
+{
+  "formatVersion": "0.1.0",
+  "language": "typescript",
+  "nodes": [
+    {
+      "id": "pkg:nanoid",
+      "kind": "package",
+      "name": "nanoid",
+      "external": true
+    },
+    {
+      "id": "src/format.ts",
+      "kind": "module",
+      "name": "format.ts",
+      "span": {
+        "file": "src/format.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 8,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/format.ts#formatNote",
+      "kind": "function",
+      "name": "formatNote",
+      "span": {
+        "file": "src/format.ts",
+        "startLine": 5,
+        "startCol": 1,
+        "endLine": 7,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/format.ts#pad",
+      "kind": "function",
+      "name": "pad",
+      "span": {
+        "file": "src/format.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 3,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/index.ts",
+      "kind": "module",
+      "name": "index.ts",
+      "span": {
+        "file": "src/index.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 13,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/index.ts#main",
+      "kind": "function",
+      "name": "main",
+      "span": {
+        "file": "src/index.ts",
+        "startLine": 4,
+        "startCol": 1,
+        "endLine": 10,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/store.ts",
+      "kind": "module",
+      "name": "store.ts",
+      "span": {
+        "file": "src/store.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 21,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/store.ts#Note",
+      "kind": "interface",
+      "name": "Note",
+      "span": {
+        "file": "src/store.ts",
+        "startLine": 3,
+        "startCol": 1,
+        "endLine": 7,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/store.ts#addNote",
+      "kind": "function",
+      "name": "addNote",
+      "span": {
+        "file": "src/store.ts",
+        "startLine": 12,
+        "startCol": 1,
+        "endLine": 16,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/store.ts#listNotes",
+      "kind": "function",
+      "name": "listNotes",
+      "span": {
+        "file": "src/store.ts",
+        "startLine": 18,
+        "startCol": 1,
+        "endLine": 20,
+        "endCol": 2
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/format.ts",
+      "to": "src/format.ts#formatNote",
+      "kind": "contains"
+    },
+    {
+      "from": "src/format.ts",
+      "to": "src/format.ts#pad",
+      "kind": "contains"
+    },
+    {
+      "from": "src/format.ts#formatNote",
+      "to": "src/format.ts#pad",
+      "kind": "call"
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/format.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/index.ts#main",
+      "kind": "call"
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/index.ts#main",
+      "kind": "contains"
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/store.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/index.ts#main",
+      "to": "src/format.ts#formatNote",
+      "kind": "call"
+    },
+    {
+      "from": "src/index.ts#main",
+      "to": "src/store.ts#addNote",
+      "kind": "call"
+    },
+    {
+      "from": "src/index.ts#main",
+      "to": "src/store.ts#listNotes",
+      "kind": "call"
+    },
+    {
+      "from": "src/store.ts",
+      "to": "pkg:nanoid",
+      "kind": "import"
+    },
+    {
+      "from": "src/store.ts",
+      "to": "src/store.ts#Note",
+      "kind": "contains"
+    },
+    {
+      "from": "src/store.ts",
+      "to": "src/store.ts#addNote",
+      "kind": "contains"
+    },
+    {
+      "from": "src/store.ts",
+      "to": "src/store.ts#listNotes",
+      "kind": "contains"
+    }
+  ]
+}

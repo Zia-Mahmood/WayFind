@@ -1,0 +1,193 @@
+{
+  "formatVersion": "0.1.0",
+  "language": "typescript",
+  "nodes": [
+    {
+      "id": "pkg:express",
+      "kind": "package",
+      "name": "express",
+      "external": true
+    },
+    {
+      "id": "pkg:node:crypto",
+      "kind": "package",
+      "name": "node:crypto",
+      "external": true
+    },
+    {
+      "id": "src/crypto.ts",
+      "kind": "module",
+      "name": "crypto.ts",
+      "span": {
+        "file": "src/crypto.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 10,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/crypto.ts#sign",
+      "kind": "function",
+      "name": "sign",
+      "span": {
+        "file": "src/crypto.ts",
+        "startLine": 3,
+        "startCol": 1,
+        "endLine": 5,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/crypto.ts#verify",
+      "kind": "function",
+      "name": "verify",
+      "span": {
+        "file": "src/crypto.ts",
+        "startLine": 7,
+        "startCol": 1,
+        "endLine": 9,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/hooks.ts",
+      "kind": "module",
+      "name": "hooks.ts",
+      "span": {
+        "file": "src/hooks.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 15,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/hooks.ts#HookEvent",
+      "kind": "interface",
+      "name": "HookEvent",
+      "span": {
+        "file": "src/hooks.ts",
+        "startLine": 3,
+        "startCol": 1,
+        "endLine": 7,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/hooks.ts#handleHook",
+      "kind": "function",
+      "name": "handleHook",
+      "span": {
+        "file": "src/hooks.ts",
+        "startLine": 9,
+        "startCol": 14,
+        "endLine": 14,
+        "endCol": 2
+      }
+    },
+    {
+      "id": "src/index.ts",
+      "kind": "module",
+      "name": "index.ts",
+      "span": {
+        "file": "src/index.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 2,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/server.ts",
+      "kind": "module",
+      "name": "server.ts",
+      "span": {
+        "file": "src/server.ts",
+        "startLine": 1,
+        "startCol": 1,
+        "endLine": 11,
+        "endCol": 1
+      }
+    },
+    {
+      "id": "src/server.ts#start",
+      "kind": "function",
+      "name": "start",
+      "span": {
+        "file": "src/server.ts",
+        "startLine": 4,
+        "startCol": 14,
+        "endLine": 10,
+        "endCol": 2
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/crypto.ts",
+      "to": "pkg:node:crypto",
+      "kind": "import"
+    },
+    {
+      "from": "src/crypto.ts",
+      "to": "src/crypto.ts#sign",
+      "kind": "contains"
+    },
+    {
+      "from": "src/crypto.ts",
+      "to": "src/crypto.ts#verify",
+      "kind": "contains"
+    },
+    {
+      "from": "src/crypto.ts#verify",
+      "to": "src/crypto.ts#sign",
+      "kind": "call"
+    },
+    {
+      "from": "src/hooks.ts",
+      "to": "src/crypto.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks.ts",
+      "to": "src/hooks.ts#HookEvent",
+      "kind": "contains"
+    },
+    {
+      "from": "src/hooks.ts",
+      "to": "src/hooks.ts#handleHook",
+      "kind": "contains"
+    },
+    {
+      "from": "src/hooks.ts#handleHook",
+      "to": "src/crypto.ts#verify",
+      "kind": "call"
+    },
+    {
+      "from": "src/index.ts",
+      "to": "src/server.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/server.ts",
+      "to": "pkg:express",
+      "kind": "import"
+    },
+    {
+      "from": "src/server.ts",
+      "to": "src/hooks.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/server.ts",
+      "to": "src/server.ts#start",
+      "kind": "contains"
+    },
+    {
+      "from": "src/server.ts#start",
+      "to": "src/hooks.ts#handleHook",
+      "kind": "call"
+    }
+  ]
+}
