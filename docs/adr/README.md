@@ -15,3 +15,4 @@ Short documents recording *why* a significant decision was made — especially f
 | [0002](0002-monorepo-tooling.md) | Monorepo: pnpm workspaces + turborepo | Accepted |
 | [0003](0003-renderer-webgl.md) | Renderer: WebGL from day one | Accepted |
 | [0004](0004-language-adapter-contract.md) | Languages as adapter pairs against versioned formats | Accepted |
+| [0005](0005-graph-storage-json.md) | Graph bundle storage: sorted JSON files | Accepted |
