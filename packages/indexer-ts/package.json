@@ -1,10 +1,19 @@
 {
   "name": "@wayfind/indexer-ts",
   "version": "0.0.0",
-  "description": "TypeScript/JavaScript static analysis to graph-core (tree-sitter + TS compiler API), with incremental re-indexing.",
+  "description": "TypeScript/JavaScript static analysis to graph-core (TS compiler API), with incremental re-indexing.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"]
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@wayfind/graph-core": "workspace:*",
+    "typescript": "^5.7.0"
+  }
 }
