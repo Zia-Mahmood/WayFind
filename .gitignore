@@ -15,6 +15,9 @@ packages/app/src-tauri/target/
 *.wayfind-trace
 !examples/**/*.wayfind-trace
 
+# throwaway SVG validation output (scripts/render-svg.mjs)
+examples/**/*.svg
+
 # editors & OS
 .vscode/*
 !.vscode/extensions.json
